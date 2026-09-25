@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /admin_chat.php
+Disallow: /admin_features.php
+Disallow: /api_chat.php
+Disallow: /auth.php
+Disallow: /config.php
+Disallow: /db.php
+
+Sitemap: http://localhost/ALSSPORT/sitemap.xml

@@ -1,0 +1,93 @@
+PROJECT INFORMATION
+Generated: 09/25/2026 20:29:22
+Project Path: C:\xampp\htdocs\ALSSPORT
+
+===== ROOT FILES =====
+.env.example
+.gitignore
+.htaccess
+admin.php
+admin_chat.php
+admin_features.php
+api_chat.php
+api_register.php
+audit.php
+auth.php
+config.php
+db.php
+footer.php
+get_orders.php
+header.php
+home.php
+index.php
+order.php
+paymnt_error.php
+profile.php
+robots.txt
+run_migration.php
+security-helpers.php
+sitemap.xml
+submit_order.php
+upgrade.php
+verify.php
+wishlist.php
+
+===== DIRECTORY STRUCTURE =====
+api
+cache
+database_backup
+logs
+uploads
+اطلاعات پروژه
+
+===== FILE TYPES =====
+.png : 40 files
+.php : 30 files
+.jpg : 21 files
+.txt : 3 files
+.jpeg : 2 files
+.cache : 2 files
+.log : 1 files
+.docx : 1 files
+.htaccess : 1 files
+.gitignore : 1 files
+.xml : 1 files
+.sql : 1 files
+.example : 1 files
+
+===== IMPORTANT FILES =====
+
+===== GIT INFORMATION =====
+--- Remote ---
+origin	https://github.com/Nimcom/Allesport.git (fetch)
+origin	https://github.com/Nimcom/Allesport.git (push)
+--- Branch ---
+main
+--- Status ---
+ M admin.php
+ D check.php
+ D check2.php
+ D check3.php
+ M config.php
+ M db.php
+ M header.php
+ M home.php
+ D if0_39948816_paris.sql
+ M index.php
+ M paymnt_error.php
+ D ui-improvements.html
+D  "\330\261\331\205\330\262 \331\210 \330\247\333\214\331\205\333\214\331\204 \330\247\330\257\331\205\333\214\331\206.txt"
+?? api/testimonials.php
+?? api_register.php
+?? database_backup/
+?? footer.php
+?? github_project_info.txt
+?? robots.txt
+?? sitemap.xml
+?? "\330\247\330\267\331\204\330\247\330\271\330\247\330\252 \331\276\330\261\331\210\332\230\331\207/"
+
+===== SUMMARY =====
+Total files: 105
+Total directories: 6
+
+Analysis completed.

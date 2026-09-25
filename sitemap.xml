@@ -1,0 +1,38 @@
+<?php
+header("Content-Type: application/xml; charset=utf-8");
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost/ALSSPORT/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://localhost/ALSSPORT/index.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://localhost/ALSSPORT/home.php</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+<?php
+try {
+    require_once 'db.php';
+    if (isset($pdo)) {
+        $stmt = $pdo->query("SELECT id FROM products");
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo '    <url>' . "\n";
+            echo '        <loc>http://localhost/ALSSPORT/index.php?id=' . $row['id'] . '</loc>' . "\n";
+            echo '        <changefreq>weekly</changefreq>' . "\n";
+            echo '        <priority>0.7</priority>' . "\n";
+            echo '    </url>' . "\n";
+        }
+    }
+} catch (Exception $e) {
+    // Fail silently if DB not available
+}
+?>
+</urlset>
