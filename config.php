@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // ============================================================
 // تنظیمات امنیتی و محیطی
 // ============================================================
@@ -23,7 +23,7 @@ if (!function_exists('getConfigValue')) {
 define('DB_HOST', getConfigValue('DB_HOST', 'localhost'));
 define('DB_USER', getConfigValue('DB_USER', 'root'));
 define('DB_PASS', getConfigValue('DB_PASS', ''));
-define('DB_NAME', getConfigValue('DB_NAME', 'if0_39948816_paris'));
+define('DB_NAME', getConfigValue('DB_NAME', 'alssport'));
 
 // ============================================================
 // تنظیمات Cloudinary
@@ -189,7 +189,7 @@ function getParam($key, $default = '', $type = 'string') {
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');                    // در XAMPP معمولاً خالی است
-define('DB_NAME', 'if0_39948816_paris');            // ← نام دیتابیس (اگر تغییر دادید اینجا هم تغییر دهید)
+define('DB_NAME', 'alssport');            // ← نام دیتابیس (اگر تغییر دادید اینجا هم تغییر دهید)
 
 // ==================== تنظیمات سشن ====================
 define('SESSION_TIMEOUT', 3600 * 24 * 7); // ۷ روز

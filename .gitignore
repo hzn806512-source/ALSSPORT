@@ -1,9 +1,20 @@
-﻿# Environment & Sensitive
+﻿# Environment & Configuration Secrets
 .env
-*.log
+config.local.php
 
-# OS & IDE
+# Application & Web Server Logs
+*.log
+logs/*.txt
+
+# Temporary and System Artifacts
+cache/
+*.cache
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
+# Sensitive Credentials & Backups
+database_backup/
+اطلاعات پروژه/
+*رمز*.txt

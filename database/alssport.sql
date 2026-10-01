@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `if0_39948816_paris`
+-- Database: `alssport`
 --
 
 -- --------------------------------------------------------
@@ -300,19 +300,19 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `product_id`, `customer_name`, `phone`, `email`, `address`, `amount`, `quantity`, `payment_status`, `created_at`, `status`, `authority`, `ref_id`, `selected_color`, `order_details_json`) VALUES
-(48, 8, 9, '????', '09368054871', 'hzn80651@gmail.com', 'dkvjkbvjxhcv hgc', 1050000, 1, '?? ?????? ??????', '2025-12-10 12:11:34', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"?????\",\"color\":\"???\",\"qty\":1,\"price\":850000}]'),
-(49, 8, 11, 'نیما', '09368054871', 'hzn80651@gmail.com', 'Fucdyfh🎟️🎫🎟️🤗🎫😄🤗🎟️🎫🤗', 195195564, 3, 'در انتظار پرداخت', '2025-12-20 01:27:09', 'pending', NULL, NULL, NULL, '[{\"id\":\"11\",\"name\":\"نيما حسین‌زاده\",\"color\":\"بنفش\",\"qty\":3,\"price\":65065065}]'),
-(50, 18, 8, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'ghghghghghgghgh', 750000, 1, 'در انتظار پرداخت', '2026-07-03 12:07:30', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
-(51, 18, 9, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'llfjkcjkckbcjbkcvvbcvjkcjkbvxlkjv', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 12:09:26', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
+(48, 8, 9, '????', '09120000001', 'demo.customer@example.com', 'dkvjkbvjxhcv hgc', 1050000, 1, '?? ?????? ??????', '2025-12-10 12:11:34', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"?????\",\"color\":\"???\",\"qty\":1,\"price\":850000}]'),
+(49, 8, 11, 'نیما', '09120000001', 'demo.customer@example.com', 'Fucdyfh🎟️🎫🎟️🤗🎫😄🤗🎟️🎫🤗', 195195564, 3, 'در انتظار پرداخت', '2025-12-20 01:27:09', 'pending', NULL, NULL, NULL, '[{\"id\":\"11\",\"name\":\"نيما حسین‌زاده\",\"color\":\"بنفش\",\"qty\":3,\"price\":65065065}]'),
+(50, 18, 8, 'Nima81', '09120000001', 'demo.customer@example.com', 'ghghghghghgghgh', 750000, 1, 'در انتظار پرداخت', '2026-07-03 12:07:30', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
+(51, 18, 9, 'Nima81', '09120000001', 'demo.customer@example.com', 'llfjkcjkckbcjbkcvvbcvjkcjkbvxlkjv', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 12:09:26', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
 (52, 0, 9, '', '', '', 'llfjkcjkckbcjbkcvvbcvjkcjkbvxlkjv', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:02:48', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
-(53, 18, 9, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:07:03', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
-(54, 18, 9, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:12:44', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
-(55, 18, 9, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:13:23', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
-(56, 18, 8, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'دددددددددددد', 750000, 1, 'در انتظار پرداخت', '2026-07-03 13:56:42', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
-(57, 18, 8, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'دددددددددددد', 750000, 1, 'در انتظار پرداخت', '2026-07-03 14:15:49', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
-(58, 18, 5, 'Nima81', '09157078042', 'hzn806571@gmail.com', 'یمرمندرطتخهل الیبخاظکیابخخطبترخببدرتزت', 29500, 1, 'در انتظار پرداخت', '2026-07-17 11:58:14', 'pending', NULL, NULL, NULL, '[{\"id\":\"5\",\"name\":\"کاپشن\",\"color\":\"مشکی\",\"qty\":1,\"price\":9500}]'),
-(59, 23, 9, 'علی حسین زاده', '09418876976', 'hzn806581@gmail.com', 'مدمددتنتنتذنتذتذذتذتتذاذاترترذاذت', 1050000, 1, 'در انتظار پرداخت', '2026-09-18 10:14:47', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
-(60, 23, 5, 'علی حسین زاده', '09418876976', 'hzn806581@gmail.com', 'خر خر خر حذذهرنراتدر', 29500, 1, 'در انتظار پرداخت', '2026-09-18 10:33:06', 'pending', NULL, NULL, NULL, '[{\"id\":\"5\",\"name\":\"کاپشن\",\"color\":\"مشکی\",\"qty\":1,\"price\":9500}]');
+(53, 18, 9, 'Nima81', '09120000001', 'demo.customer@example.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:07:03', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
+(54, 18, 9, 'Nima81', '09120000001', 'demo.customer@example.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:12:44', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
+(55, 18, 9, 'Nima81', '09120000001', 'demo.customer@example.com', 'nnnnnnnnnnnnnnn', 1050000, 1, 'در انتظار پرداخت', '2026-07-03 13:13:23', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
+(56, 18, 8, 'Nima81', '09120000001', 'demo.customer@example.com', 'دددددددددددد', 750000, 1, 'در انتظار پرداخت', '2026-07-03 13:56:42', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
+(57, 18, 8, 'Nima81', '09120000001', 'demo.customer@example.com', 'دددددددددددد', 750000, 1, 'در انتظار پرداخت', '2026-07-03 14:15:49', 'pending', NULL, NULL, NULL, '[{\"id\":\"8\",\"name\":\"کاپشن\",\"color\":\"طوسی\",\"qty\":1,\"price\":550000}]'),
+(58, 18, 5, 'Nima81', '09120000001', 'demo.customer@example.com', 'یمرمندرطتخهل الیبخاظکیابخخطبترخببدرتزت', 29500, 1, 'در انتظار پرداخت', '2026-07-17 11:58:14', 'pending', NULL, NULL, NULL, '[{\"id\":\"5\",\"name\":\"کاپشن\",\"color\":\"مشکی\",\"qty\":1,\"price\":9500}]'),
+(59, 23, 9, 'علی حسین زاده', '09120000001', 'demo.customer@example.com', 'مدمددتنتنتذنتذتذذتذتتذاذاترترذاذت', 1050000, 1, 'در انتظار پرداخت', '2026-09-18 10:14:47', 'pending', NULL, NULL, NULL, '[{\"id\":\"9\",\"name\":\"کاپشن\",\"color\":\"سرمه‌ای\",\"qty\":1,\"price\":850000}]'),
+(60, 23, 5, 'علی حسین زاده', '09120000001', 'demo.customer@example.com', 'خر خر خر حذذهرنراتدر', 29500, 1, 'در انتظار پرداخت', '2026-09-18 10:33:06', 'pending', NULL, NULL, NULL, '[{\"id\":\"5\",\"name\":\"کاپشن\",\"color\":\"مشکی\",\"qty\":1,\"price\":9500}]');
 
 -- --------------------------------------------------------
 
@@ -422,12 +422,12 @@ CREATE TABLE `testimonials` (
 --
 
 INSERT INTO `testimonials` (`id`, `user_id`, `name`, `phone`, `message`, `status`, `created_at`, `rating`) VALUES
-(1, NULL, 'nima', '09368054871', 'بسیار عالی بسیار عالی', 'approved', '2026-07-23 10:27:26', 5),
-(2, NULL, 'nima', '09368054871', 'نمنتدن', 'deleted', '2026-07-23 10:38:42', 5),
-(3, NULL, 'nima', '09368054871', 'یبیبیذ', 'deleted', '2026-07-23 11:38:30', 5),
-(5, NULL, 'nima2', '09368059871', 'خیلی عالی بود من که راضی بودم از همه خدماتشون', 'approved', '2026-07-23 12:37:22', 3),
-(6, NULL, 'nima3', '09368059871', 'عالی', 'approved', '2026-07-23 14:25:31', 1),
-(7, 22, 'ادمین', '09361254887', 'نه خوب نبود', 'approved', '2026-09-18 10:01:01', 4);
+(1, NULL, 'nima', '09120000001', 'بسیار عالی بسیار عالی', 'approved', '2026-07-23 10:27:26', 5),
+(2, NULL, 'nima', '09120000001', 'نمنتدن', 'deleted', '2026-07-23 10:38:42', 5),
+(3, NULL, 'nima', '09120000001', 'یبیبیذ', 'deleted', '2026-07-23 11:38:30', 5),
+(5, NULL, 'nima2', '09120000001', 'خیلی عالی بود من که راضی بودم از همه خدماتشون', 'approved', '2026-07-23 12:37:22', 3),
+(6, NULL, 'nima3', '09120000001', 'عالی', 'approved', '2026-07-23 14:25:31', 1),
+(7, 22, 'ادمین', '09120000001', 'نه خوب نبود', 'approved', '2026-09-18 10:01:01', 4);
 
 -- --------------------------------------------------------
 
@@ -475,27 +475,27 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `phone`, `email`, `password`, `profile_pic`, `verification_code`, `is_verified`, `is_admin`, `created_at`) VALUES
-(2, 'Sina', '09019429535', 'sina_hz2000@yahoo.com', '$2y$10$tdA0JwRr29nR5QLzGf1jcevqeitQPCTTsK06TLpBiZi.T8aJMeNii', 'uploads/Profile_09019429535.jpg', NULL, 1, 0, '2025-11-20 09:36:31'),
-(3, 'Nima', '093680548712', 'hzn806512@gmail.com', '$2y$10$XhyKcjpQ7keF/K5ikd8uHuWhSCc8KOW33TT080CNfCOoj0AlK.HZa', 'uploads/Profile_093680548712.png', NULL, 1, 0, '2025-11-20 10:44:20'),
+(2, 'Sina', '09120000001', 'demo.customer@example.com', '$2y$10$tdA0JwRr29nR5QLzGf1jcevqeitQPCTTsK06TLpBiZi.T8aJMeNii', 'uploads/Profile_demo.jpg', NULL, 1, 0, '2025-11-20 09:36:31'),
+(3, 'Nima', '093680548712', 'demo.customer@example.com', '$2y$10$XhyKcjpQ7keF/K5ikd8uHuWhSCc8KOW33TT080CNfCOoj0AlK.HZa', 'uploads/Profile_093680548712.png', NULL, 1, 0, '2025-11-20 10:44:20'),
 (4, 'ال', '3521', 'ذبل', '$2y$10$V9eL1utY3O0B/stghb/xPesnOUR9EqaDjMVfXWC1mPOA93gz5C9ey', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '6619', 0, 0, '2025-11-20 12:02:16'),
-(5, 'Yasin Sarooje', '09155895827', 'yasinsaroje@gmail.com', '$2y$10$OGIe3lsVswQibwoW7I0Dn.Bb.R29yUacyYKggW3cLPvtHi3W9wnz2', 'uploads/Profile_09155895827.jpg', NULL, 1, 0, '2025-11-22 04:23:58'),
-(6, 'aref', '09217302209', 'gcdchycjjgthyf@gmail.com', '$2y$10$aL4NOjfUpTBKPLgR74JM7.5kklT5j5b2TMFLqkLBDs4DrGmHyFLjK', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', NULL, 1, 0, '2025-11-23 08:20:35'),
-(8, 'نیما', '09368054871', 'hzn80651@gmail.com', '$2y$10$L1bK4mt.W30P0X8TmOpUe.AHBAqZBaB/ITMxj4Yy/PcLNwVyoy2jW', 'uploads/Profile_8_1767619770.png', NULL, 1, 0, '2025-11-24 21:26:11'),
-(9, 'System Alert', '0000000000', 'sys@admin.com', '123', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', NULL, 1, 0, '2025-11-25 01:34:49'),
-(10, 'کوروش جاوید', '09026336049', 'kourosh618@gmail.com', '$2y$10$2UVb0NucHtZe7TnLyi2jXefjPiOuNddUg2.eTpjjl0y./76OXAWmq', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '6553', 0, 0, '2025-12-10 08:51:04'),
-(11, 'nima Nima2136', '09157878002', 'hzn806519@gmail.com', '$2y$10$/D/LPaMx2XMbawSp6YnAfeCGzir78BFYQvFkOKjGs8g3L.lFqA2zO', 'uploads/Profile_11_1781961726.png', NULL, 1, 0, '2026-06-20 16:47:33'),
-(12, 'nima Nima2136', '09157878002', 'hzn806563@gmail.com', '$2y$10$jVHTCeXbS0ey9igRdmf3POXLT2xCYz2ywq1w1WYRTGGlNp62yzrGy', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '9743', 0, 0, '2026-06-23 07:20:00'),
-(13, 'Nima2186', '09151078042', 'hzn806511@gmail.com', '$2y$10$QAl7IH9iVg8aeWYPPAu4R.csA1SIpEC2ZZeUwWoUoXjrDvUxoqI/u', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '7302', 0, 0, '2026-06-23 07:21:50'),
-(14, 'nima Nima2136', '09187878002', 'hzn8065176@gmail.com', '$2y$10$fK5BROSNf7JT0IINF/kh1ue4v.ZPdIJZrq1HsEHjkUDTzyfu.GAPi', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '5451', 0, 0, '2026-06-27 08:42:12'),
-(15, 'nima Nima2136', '09157879002', 'hzn8065158@gmail.com', '$2y$10$7IKp4WGbJYISq69/vV6tb.Su86yURl9myNNJhGqfhRHRTnYX9ztuC', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '5175', 0, 0, '2026-06-27 17:29:39'),
-(16, 'Nima2186', '09151878042', 'hzn80658523@gmail.com', '$2y$10$xkownUI3maeH.ODM//NlzO55cdslfeccq1jvnnhR0bPEZf3HCNYMu', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '3294', 0, 0, '2026-06-27 18:45:23'),
-(17, 'Nima2186', '09151078042', 'hzn80652023@gmail.com', '$2y$10$BNeBBDy/YfjZv.7KVcQaFea0S9akpPpfWCthHCL6Pz8FZv86xZTne', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '4715', 0, 0, '2026-06-27 22:35:05'),
-(18, 'Nima Hossein zadeh', '09157078042', 'hzn806571@gmail.com', '$2y$10$JpjTF2MfjEavK9e0NUZ5Wub/aGQTUbdUN4B5xf8f2zzZ6sJsPLk5W', 'uploads/Profile_18_1784769912.png', NULL, 1, 0, '2026-07-03 11:53:37'),
-(19, 'Nima25', '09158078042', 'hzn806522@gmail.com', '$2y$10$KUstypcrcFxhfEmimCzPWe4..QsdYCRE0uxR4CM6KW5tZt7vh9ka.', 'uploads/Profile_19_1783499193.png', NULL, 1, 0, '2026-07-08 11:00:24'),
-(20, 'nima Nima2136', '09157828002', 'hzn8065112@gmail.com', '$2y$10$KEcMBocpQysApXqn7X9jD.6YDJXjVlQN3Q2rG2TbhIjDvO8MFKmVy', 'uploads/Profile_20_1784181672.png', NULL, 1, 0, '2026-07-16 09:30:50'),
-(21, 'دژهوت', '09369054871', 'hzn806513@gmail.com', '$2y$10$akDpWTuZUSDXK4bwzXk19e4v5xWllHOwgk9WCvbJXHYRqD0xY2buG', 'uploads/Profile_21_1784799814.png', NULL, 1, 0, '2026-07-23 13:13:08'),
-(22, 'ادمین', '09361254887', 'hzn8065111@gmail.com', '$2y$10$Bcu6SL0XGI9quPoFIEETj.5mo3a0Yg3x48CNndQvrgNzNAP7UF.pi', 'uploads/Profile_22_1785056819.png', NULL, 1, 1, '2026-07-26 12:28:14'),
-(23, 'علی حسین زاده', '09418876976', 'hzn806581@gmail.com', '$2y$10$We9.UPdyeraxSuSFDZmjjuiz3Ka3b/6TEio.cLMNOWJkWA0cHM/.q', 'uploads/Profile_23_1789713857.png', NULL, 1, 0, '2026-09-18 10:13:55');
+(5, 'Yasin Sarooje', '09120000001', 'demo.customer@example.com', '$2y$10$OGIe3lsVswQibwoW7I0Dn.Bb.R29yUacyYKggW3cLPvtHi3W9wnz2', 'uploads/Profile_demo.jpg', NULL, 1, 0, '2025-11-22 04:23:58'),
+(6, 'aref', '09120000001', 'demo.customer@example.com', '$2y$10$aL4NOjfUpTBKPLgR74JM7.5kklT5j5b2TMFLqkLBDs4DrGmHyFLjK', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', NULL, 1, 0, '2025-11-23 08:20:35'),
+(8, 'نیما', '09120000001', 'demo.customer@example.com', '$2y$10$L1bK4mt.W30P0X8TmOpUe.AHBAqZBaB/ITMxj4Yy/PcLNwVyoy2jW', 'uploads/Profile_8_1767619770.png', NULL, 1, 0, '2025-11-24 21:26:11'),
+(9, 'System Alert', '0000000000', 'demo.customer@example.com', '123', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', NULL, 1, 0, '2025-11-25 01:34:49'),
+(10, 'کوروش جاوید', '09120000001', 'demo.customer@example.com', '$2y$10$2UVb0NucHtZe7TnLyi2jXefjPiOuNddUg2.eTpjjl0y./76OXAWmq', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '6553', 0, 0, '2025-12-10 08:51:04'),
+(11, 'nima Nima2136', '09120000001', 'demo.customer@example.com', '$2y$10$/D/LPaMx2XMbawSp6YnAfeCGzir78BFYQvFkOKjGs8g3L.lFqA2zO', 'uploads/Profile_11_1781961726.png', NULL, 1, 0, '2026-06-20 16:47:33'),
+(12, 'nima Nima2136', '09120000001', 'demo.customer@example.com', '$2y$10$jVHTCeXbS0ey9igRdmf3POXLT2xCYz2ywq1w1WYRTGGlNp62yzrGy', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '9743', 0, 0, '2026-06-23 07:20:00'),
+(13, 'Nima2186', '09120000001', 'demo.customer@example.com', '$2y$10$QAl7IH9iVg8aeWYPPAu4R.csA1SIpEC2ZZeUwWoUoXjrDvUxoqI/u', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '7302', 0, 0, '2026-06-23 07:21:50'),
+(14, 'nima Nima2136', '09120000001', 'demo.customer@example.com', '$2y$10$fK5BROSNf7JT0IINF/kh1ue4v.ZPdIJZrq1HsEHjkUDTzyfu.GAPi', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '5451', 0, 0, '2026-06-27 08:42:12'),
+(15, 'nima Nima2136', '09120000001', 'demo.customer@example.com', '$2y$10$7IKp4WGbJYISq69/vV6tb.Su86yURl9myNNJhGqfhRHRTnYX9ztuC', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '5175', 0, 0, '2026-06-27 17:29:39'),
+(16, 'Nima2186', '09120000001', 'demo.customer@example.com', '$2y$10$xkownUI3maeH.ODM//NlzO55cdslfeccq1jvnnhR0bPEZf3HCNYMu', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '3294', 0, 0, '2026-06-27 18:45:23'),
+(17, 'Nima2186', '09120000001', 'demo.customer@example.com', '$2y$10$BNeBBDy/YfjZv.7KVcQaFea0S9akpPpfWCthHCL6Pz8FZv86xZTne', 'https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@latest/assets/Person/3D/person_3d.png', '4715', 0, 0, '2026-06-27 22:35:05'),
+(18, 'Nima Hossein zadeh', '09120000001', 'demo.customer@example.com', '$2y$10$JpjTF2MfjEavK9e0NUZ5Wub/aGQTUbdUN4B5xf8f2zzZ6sJsPLk5W', 'uploads/Profile_18_1784769912.png', NULL, 1, 0, '2026-07-03 11:53:37'),
+(19, 'Nima25', '09120000001', 'demo.customer@example.com', '$2y$10$KUstypcrcFxhfEmimCzPWe4..QsdYCRE0uxR4CM6KW5tZt7vh9ka.', 'uploads/Profile_19_1783499193.png', NULL, 1, 0, '2026-07-08 11:00:24'),
+(20, 'nima Nima2136', '09120000001', 'demo.customer@example.com', '$2y$10$KEcMBocpQysApXqn7X9jD.6YDJXjVlQN3Q2rG2TbhIjDvO8MFKmVy', 'uploads/Profile_20_1784181672.png', NULL, 1, 0, '2026-07-16 09:30:50'),
+(21, 'دژهوت', '09120000001', 'demo.customer@example.com', '$2y$10$akDpWTuZUSDXK4bwzXk19e4v5xWllHOwgk9WCvbJXHYRqD0xY2buG', 'uploads/Profile_21_1784799814.png', NULL, 1, 0, '2026-07-23 13:13:08'),
+(22, 'ادمین', '09120000001', 'demo.customer@example.com', '$2y$10$Bcu6SL0XGI9quPoFIEETj.5mo3a0Yg3x48CNndQvrgNzNAP7UF.pi', 'uploads/Profile_22_1785056819.png', NULL, 1, 1, '2026-07-26 12:28:14'),
+(23, 'علی حسین زاده', '09120000001', 'demo.customer@example.com', '$2y$10$We9.UPdyeraxSuSFDZmjjuiz3Ka3b/6TEio.cLMNOWJkWA0cHM/.q', 'uploads/Profile_23_1789713857.png', NULL, 1, 0, '2026-09-18 10:13:55');
 
 -- --------------------------------------------------------
 

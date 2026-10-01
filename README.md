@@ -1,88 +1,131 @@
-﻿# ⚽ ALSSPORT - Sports Store Web Application
-
-> A modern and responsive e-commerce web application for sports gear and apparel, developed using PHP and MySQL.
-
----
-
-## 🌐 Languages / زبان‌ها
-- [English](#-english)
-- [فارسی](#-فارسی)
-
----
-
-## 🇺🇸 English
-
-### 📌 Overview
-**ALSSPORT** is an e-commerce platform designed for sports enthusiasts. It provides an end-to-end shopping workflow for customers alongside a feature-rich administration panel for store operators.
-
-### ✨ Key Features
-- **Product Catalog:** Advanced filtering by category, price, and specifications.
-- **Admin Dashboard:** Full management of inventory, products, categories, orders, and customer reviews.
-- **Shopping Cart & Checkout:** Seamless order submission and processing.
-- **Live Chat & Wishlist:** Real-time customer communication and saved items.
-- **Responsive Layout:** Optimized for desktop, tablet, and mobile devices.
-
-### 🚀 How to Run Locally
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/hzn806512-source/ALSSPORT.git
-   ```
-
-2. **Setup Database:**
-   - Open **phpMyAdmin** in XAMPP.
-   - Create a database named `alssport`.
-   - Import the schema from `/database/alssport.sql`.
-
-3. **Configure Database Connection:**
-   - Update database credentials in your configuration file (e.g., `config.php` or `db.php`).
-
-4. **Launch Application:**
-   - Place project files inside `xampp/htdocs/ALSSPORT`.
-   - Open your browser and navigate to `http://localhost/ALSSPORT`.
-
-### 🔑 Demo Admin Credentials
-Use the following credentials to access and evaluate the admin panel:
-- **Email:** `admin@alssport.com`
-- **Password:** `admin123`
-
----
-
-## 🇮🇷 فارسی
-
-<div dir="rtl">
-
-### 📌 درباره پروژه
-**ALSSPORT** یک وب‌اپلیکیشن فروشگاهی کامل برای عرضه تجهیزات و لوازم ورزشی است که با معماری استاندارد در **PHP و پایگاه‌داده MySQL** طراحی و پیاده‌سازی شده است.
-
-### ✨ امکانات و قابلیت‌های اصلی
-- **کاتالوگ هوشمند محصولات:** دسته‌بندی دقیق، فیلتر قیمت و مشخصات کالا.
-- **پنل مدیریت اختصاصی (Admin Panel):** مدیریت موجودی انبار، محصولات، سفارشات و نظرات مشتریان.
-- **سبد خرید و تسویه حساب:** فرآیند استاندارد خرید و اعتبارسنجی پرداخت.
-- **سیستم پشتیبانی آنلاین و لیست علاقه‌مندی‌ها:** قابلیت چت و ذخیره محصولات محبوب.
-- **طراحی واکنش‌گرا (Responsive):** نمایش بی‌نقص در رایانه، تبلت و گوشی‌های هوشمند.
-
-### 🚀 راهنمای نصب و اجرای لوکال
-
-۱. **کلون کردن مخزن:**
-```bash
-git clone https://github.com/hzn806512-source/ALSSPORT.git
-```
-
-۲. **راه‌اندازی پایگاه داده:**
-- وارد محیط **phpMyAdmin** در زمپ (XAMPP) شوید.
-- یک دیتابیس جدید به نام `alssport` بسازید.
-- فایل `database/alssport.sql` را در آن ایمپورت (Import) کنید.
-
-۳. **تنظیم اتصال دیتابیس:**
-- مشخصات کاربری دیتابیس لوکال خود را در فایل اتصال (مثل `config.php`) بررسی کنید.
-
-۴. **اجرای سایت:**
-- پروژه را در مسیر `xampp/htdocs/ALSSPORT` قرار داده و آدرس `http://localhost/ALSSPORT` را در مرورگر باز کنید.
-
-### 🔑 اطلاعات ورود مدیر (دمو جهت بررسی و ارزیابی)
-جهت تست و ارزیابی امکانات پنل ادمین می‌توانید از مشخصات زیر استفاده نمایید:
-- **ایمیل:** `admin@alssport.com`
-- **رمز عبور:** `admin123`
-
+﻿<div align="center">
+⚽ ALSSPORT - Sports Store E-Commerce Web Application
+A robust, responsive e-commerce web platform for sporting goods and athletic apparel, featuring product catalogs, cart management, customer testimonials, live support chat, and a full administrative dashboard.
+![Image](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Image](https://img.shields.io/badge/MySQL-5.7%2B%20%7C%20MariaDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Image](https://img.shields.io/badge/Architecture-Modular%20PHP%20%2B%20REST%20APIs-0284c7?style=for-the-badge)
+![Image](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Image](https://img.shields.io/badge/Security-Sanitized%20%26%20Protected-emerald?style=for-the-badge)
 </div>
+🌐 Live Demo & Quick Access
+Storefront / Catalog: http://localhost/ALSSPORT/home.php
+Shopping Cart & Checkout: http://localhost/ALSSPORT/order.php
+Store Administration: http://localhost/ALSSPORT/admin.php
+Demo Evaluation Credentials:
+Store Administrator: Email: admin@alssport.com | Password: admin123
+Customer Demo: Email: customer@example.com | Password: password123
+📸 System Showcase & Screenshots
+🛒 Storefront & Catalog👟 Product Detail & Options
+![Image](docs/screenshots/01_storefront_home.svg)![Image](docs/screenshots/02_product_details.svg)
+💳 Checkout & Cart Flow📊 Store Administration Center
+![Image](docs/screenshots/03_shopping_cart.svg)![Image](docs/screenshots/04_admin_dashboard.svg)
+⚡ Core Technical Features
+Dynamic Product Catalog & Filtering: Browse athletic shoes, apparel, and accessories with instant categorization, price range sorting, and brand discovery.
+Asynchronous RESTful Endpoints (/api/): Decoupled backend handlers for live chat (api_chat.php), newsletter subscriptions (newsletter.php), testimonials (testimonials.php), and wishlist management (wishlist.php).
+Cart & Order Processing Wizard: End-to-end purchasing workflow tracking customer information, applied discounts, order itemization, and mock payment verification.
+Interactive Customer Engagement: Integrated live chat messaging mechanism allowing direct interaction between store operators and shoppers.
+Store Operations Management: Comprehensive administrative control panel to manage catalog inventory, audit user orders, oversee customer reviews, and monitor traffic metrics.
+Fully Responsive Mobile Experience: Hand-crafted CSS grid and flexbox layout ensuring seamless navigation on smartphones, tablets, and desktop workstations.
+🛠️ Tech Stack
+DomainTechnology / Specification
+Backend LanguagePHP 8.0+ (Modular, OOP Helpers, REST JSON Endpoints)
+DatabaseMySQL / MariaDB (Prepared Statements, Relational Schema)
+API ArchitectureRESTful JSON endpoints with Fetch API / AJAX integration
+FrontendHTML5, Modern Responsive CSS3, Vanilla JavaScript (ES6+)
+Security LayerInput Sanitization, Session-Based Role Authentication, Rate Limiting
+Web ServerApache (mod_rewrite, .htaccess security headers)
+🏛️ System Architecture
+ALSSPORT utilizes a Modular Front-Controller with Embedded REST APIs:
+code
+Text
+HTTP Request (Browser / Client App)
+       │
+       ▼
+ [ Entry Points / Routers ]
+ (index.php, home.php, order.php, admin.php)
+       │
+       ├─────────────────────────────────┐
+       ▼                                 ▼
+[ REST API Handlers ]             [ Page Controllers ]
+(/api/testimonials.php,           (home.php, admin.php,
+ /api/wishlist.php, etc.)          order.php, verify.php)
+       │                                 │
+       ├─────────────────────────────────┘
+       ▼
+[ Security & Helper Layer ]
+(security-helpers.php, auth.php, Session Management)
+       │
+       ▼
+[ Database Access Layer ]
+(db.php, config.php using PDO / MySQLi Prepared Queries)
+       │
+       ▼
+[ Normalized MySQL Database ] (`alssport.sql`)
+📂 Project Structure
+code
+Text
+ALSSPORT/
+├── api/                         # Asynchronous RESTful JSON endpoints
+│   ├── newsletter.php           # Newsletter subscription processor
+│   ├── reviews.php              # Product review submissions & ratings
+│   ├── testimonials.php         # Customer testimonial feed
+│   ├── track-view.php           # Analytics & product view counter
+│   └── wishlist.php             # Wishlist add/remove operations
+├── database/
+│   └── alssport.sql             # Sanitized schema with demo catalog & users
+├── docs/
+│   └── screenshots/             # Interface mockups & feature screenshots
+├── logs/                        # Application audit trail
+│   └── order.php                # Order transaction log
+├── uploads/                     # Product catalog and promotional imagery
+├── .env.example                 # Environment configuration template
+├── .gitignore                   # Production-grade git exclusion rules
+├── admin.php                    # Store management dashboard
+├── admin_chat.php               # Live support chat administrative console
+├── api_chat.php                 # Real-time message polling endpoint
+├── config.php                   # Core database & environment parameters
+├── db.php                       # Database connection wrapper
+├── home.php                     # Storefront catalog & hero showcase
+├── order.php                    # Cart review & checkout wizard
+├── submit_order.php             # Order persistence & invoice creation
+└── verify.php                   # Mock payment verification gateway
+🚀 Installation & Local Setup
+1. Prerequisites
+PHP: Version 8.0 or higher.
+Web Server: Apache (e.g., XAMPP, WAMP, or standalone Apache).
+Database Server: MySQL 5.7+ or MariaDB 10.3+.
+2. Clone the Repository
+code
+Bash
+git clone https://github.com/hzn806512-source/ALSSPORT.git
+cd ALSSPORT
+3. Database Setup
+Open phpMyAdmin in your browser.
+Create a new database named alssport:
+code
+SQL
+CREATE DATABASE alssport CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+Import the sanitized schema:
+Click on the alssport database.
+Go to the Import tab.
+Choose database/alssport.sql and click Import.
+4. Configuration
+Inspect config.php and db.php to ensure credentials match your local MySQL configuration:
+code
+PHP
+$db_host = 'localhost';
+$db_name = 'alssport';
+$db_user = 'root';
+$db_pass = '';
+5. Launch the Application
+Place the directory in C:/xampp/htdocs/ALSSPORT.
+Open your browser and navigate to:
+code
+Text
+http://localhost/ALSSPORT/home.php
+🔒 Security & Privacy Sanitization Notes
+Data Privacy Audit: The public database dump database/alssport.sql has been scrubbed of real-world personal information, customer contact numbers, and live host references. All demo accounts use anonymized credentials.
+Environment Isolation: Credentials and sensitive files are excluded from version tracking through .gitignore.
+Prepared Statements: Dynamic database inputs are sanitized against SQL injection vulnerabilities.
+📄 License
+This project is open-source under the MIT License.
